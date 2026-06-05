@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light only">
+  <meta name="theme-color" content="#ffffff">
+  <title>Согласие на обработку файлов cookie — Термологистика</title>
+  <meta name="description" content="Согласие на обработку файлов cookie и данных для аналитики и рекламы — termolog.pro.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --c-ink: #0f172a;
+      --c-graphite: #475569;
+      --c-steel: #64748b;
+      --c-faded: #cbd5e1;
+      --c-white: #ffffff;
+      --c-canvas: #f1f5f9;
+      --c-whisper: #eff6ff;
+      --c-jet: #1e293b;
+      --c-ember: #2563eb;
+      --accent: #2563eb;
+      --accent-soft: rgba(37, 99, 235, 0.20);
+      --accent-ink: #ffffff;
+      --font-display: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+      --font-body: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+      --r-btn: 12px;
+      --pad-page: 32px;
+      --maxw: 1440px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; overflow-x: hidden; }
+    body {
+      font-family: var(--font-body);
+      color: var(--c-ink);
+      background: var(--c-white);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--pad-page); }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 22px; border-radius: var(--r-btn);
+      font-size: 14px; font-weight: 600; letter-spacing: -0.01em;
+      white-space: nowrap; cursor: pointer; border: none;
+      transition: background .15s, color .15s, border-color .15s;
+    }
+    .btn-sm { padding: 10px 14px; font-size: 13px; }
+    .btn-primary { background: var(--c-ink); color: var(--c-white); }
+    .btn-primary:hover { background: var(--c-jet); }
+    .btn-ghost { background: transparent; color: var(--c-ink); border: 1px solid var(--c-faded); }
+    .btn-ghost:hover { border-color: var(--c-ink); }
+
+    /* Nav */
+    .nav {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: saturate(180%) blur(14px);
+      -webkit-backdrop-filter: saturate(180%) blur(14px);
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+      padding: 18px 0;
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 68px; }
+    .logo { display: inline-flex; align-items: center; }
+    .logo-img { height: 56px; width: auto; object-fit: contain; }
+    .nav-links { display: flex; gap: 4px; }
+    .nav-links a {
+      padding: 8px 14px; border-radius: 999px;
+      font-size: 14px; font-weight: 500; color: var(--c-graphite);
+      transition: background .15s, color .15s;
+    }
+    .nav-links a:hover { background: var(--c-canvas); color: var(--c-ink); }
+    .nav-cta { display: flex; gap: 8px; align-items: center; flex-shrink: 0; }
+    @media (max-width: 1100px) { .nav-links { display: none; } }
+    @media (max-width: 600px) {
+      .nav-inner { height: 60px; }
+      .logo-img { height: 44px; }
+      .nav-phone-text { display: none; }
+    }
+
+    /* Doc hero */
+    .doc-hero {
+      padding: 64px 0 40px;
+      border-bottom: 1px solid var(--c-faded);
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: var(--font-mono);
+      font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--c-steel);
+    }
+    .eyebrow::before {
+      content: ""; width: 6px; height: 6px; border-radius: 999px;
+      background-color: var(--accent);
+      box-shadow: 0 0 0 4px var(--accent-soft);
+    }
+    .doc-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(30px, 4.4vw, 48px);
+      font-weight: 600; line-height: 1.08; letter-spacing: -0.03em;
+      margin: 18px 0 0; max-width: 900px; text-wrap: balance;
+    }
+    .doc-hero .meta {
+      margin-top: 18px;
+      font-family: var(--font-mono);
+      font-size: 13px; color: var(--c-steel);
+    }
+
+    /* Doc body */
+    .doc-wrap { padding: 56px 0 96px; }
+    .doc-body { max-width: 820px; }
+    .doc-body h2 {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 2vw, 24px); font-weight: 600;
+      letter-spacing: -0.02em; line-height: 1.25;
+      margin: 44px 0 14px;
+    }
+    .doc-body h2:first-child { margin-top: 0; }
+    .doc-body h3 {
+      font-size: 17px; font-weight: 600; letter-spacing: -0.01em;
+      margin: 28px 0 8px;
+    }
+    .doc-body p {
+      margin: 0 0 14px;
+      font-size: 16px; line-height: 1.7;
+      color: #1f2937; text-wrap: pretty;
+    }
+    .doc-body strong { font-weight: 600; color: var(--c-ink); }
+    .doc-body a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+    .doc-body ul, .doc-body ol {
+      margin: 8px 0 18px; padding-left: 0; list-style: none;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .doc-body ul li {
+      position: relative; padding-left: 26px;
+      font-size: 16px; line-height: 1.6; color: #1f2937;
+    }
+    .doc-body ul li::before {
+      content: ""; position: absolute; left: 0; top: 10px;
+      width: 7px; height: 7px; border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px var(--accent-soft);
+    }
+    .doc-body ol { counter-reset: step; }
+    .doc-body ol > li {
+      counter-increment: step; position: relative; padding-left: 44px;
+      font-size: 16px; line-height: 1.6; color: #1f2937;
+    }
+    .doc-body ol > li::before {
+      content: counter(step) ".";
+      position: absolute; left: 0; top: 0;
+      font-family: var(--font-mono); font-weight: 600; font-size: 14px;
+      color: var(--accent);
+    }
+    .doc-info {
+      margin: 0 0 36px;
+      padding: 24px 28px;
+      background: var(--c-canvas);
+      border-radius: 18px;
+      display: grid; gap: 12px;
+    }
+    .doc-info .row { display: grid; grid-template-columns: 200px 1fr; gap: 16px; }
+    .doc-info .k {
+      font-family: var(--font-mono); font-size: 11px;
+      letter-spacing: 0.08em; text-transform: uppercase; color: var(--c-steel);
+      padding-top: 2px;
+    }
+    .doc-info .v { font-size: 15px; font-weight: 500; color: var(--c-ink); }
+    @media (max-width: 600px) {
+      .doc-info .row { grid-template-columns: 1fr; gap: 4px; }
+    }
+
+    /* Footer */
+    footer {
+      background: var(--c-ink);
+      color: rgba(255,255,255,0.7);
+      padding: 48px 0 24px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .footer-row {
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 16px;
+      font-family: var(--font-mono); font-size: 13px;
+      color: rgba(255,255,255,0.45);
+    }
+    .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+    .footer-links a:hover { color: var(--c-white); }
+    @media (max-width: 600px) { .footer-row { flex-direction: column; align-items: flex-start; } }
+
+    /* Cookie banner */
+    .cookie-banner {
+      position: fixed; left: 0; right: 0; bottom: 0; z-index: 100;
+      background: var(--c-ink); color: rgba(255,255,255,0.85);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 20px var(--pad-page);
+      transform: translateY(110%);
+      transition: transform .35s cubic-bezier(.4,0,.2,1);
+    }
+    .cookie-banner.show { transform: translateY(0); }
+    .cookie-inner {
+      max-width: var(--maxw); margin: 0 auto;
+      display: flex; align-items: center; gap: 24px; flex-wrap: wrap;
+    }
+    .cookie-text {
+      flex: 1 1 480px; min-width: 280px;
+      font-size: 13.5px; line-height: 1.55;
+      color: rgba(255,255,255,0.7);
+    }
+    .cookie-text a { color: #93b8ff; text-decoration: underline; text-underline-offset: 2px; }
+    .cookie-actions { display: flex; gap: 10px; flex-shrink: 0; }
+    .cookie-accept { background: var(--accent); color: #fff; }
+    .cookie-accept:hover { background: #1d4ed8; }
+    .cookie-reject { background: rgba(255,255,255,0.08); color: #fff; border: 1px solid rgba(255,255,255,0.18); }
+    .cookie-reject:hover { background: rgba(255,255,255,0.16); }
+    @media (max-width: 720px) {
+      .cookie-actions { width: 100%; }
+      .cookie-actions .btn { flex: 1; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <img src="mp5kn7wt-photo_2026-03-21_17-02-11-no-bg-preview-_carve.photos_.png" alt="Термологистика" class="logo-img">
+      </a>
+      <div class="nav-links">
+        <a href="index.html#services">Услуги</a>
+        <a href="index.html#airports">Аэропорт</a>
+        <a href="index.html#routes">Маршруты</a>
+        <a href="index.html#fleet">Автопарк</a>
+        <a href="cases.html">Кейсы</a>
+        <a href="index.html#process">Как мы работаем</a>
+        <a href="index.html#advantages">Преимущества</a>
+      </div>
+      <div class="nav-cta">
+        <a href="index.html" class="btn btn-primary btn-sm">
+          На главную
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="doc-hero">
+    <div class="container">
+      <div class="eyebrow">Правовая информация</div>
+      <h1>Согласие на обработку файлов cookie и данных для аналитики и рекламы</h1>
+      <div class="meta">Отдельное согласие · версия для cookie-баннера · termolog.pro</div>
+    </div>
+  </header>
+
+  <main class="doc-wrap">
+    <div class="container">
+      <div class="doc-body">
+
+        <p>
+          Нажимая «Принять» в информационном баннере на сайте <strong>termolog.pro</strong>,
+          я даю согласие индивидуальному предпринимателю Дербеневой Марианне Владимировне
+          (ИНН 781428911507, ОГРНИП 324784700067230; далее — «Оператор») на обработку файлов cookie
+          и онлайн-идентификаторов на условиях ниже. Это согласие является самостоятельным и не
+          связано с согласием на обработку данных в заявке.
+        </p>
+
+        <h2>1. Какие данные обрабатываются</h2>
+        <p>Обезличенные данные о моём посещении Сайта:</p>
+        <ul>
+          <li>файлы cookie и онлайн-идентификаторы;</li>
+          <li>IP-адрес, сведения о браузере, устройстве и операционной системе;</li>
+          <li>источники переходов и действия на страницах Сайта.</li>
+        </ul>
+        <p>Оператор не идентифицирует конкретное физическое лицо на основании этих данных.</p>
+
+        <h2>2. Цели</h2>
+        <ul>
+          <li>сбор статистики посещаемости и анализ работы Сайта;</li>
+          <li>показ таргетированной рекламы и ретаргетинг в рекламных системах.</li>
+        </ul>
+
+        <h2>3. Используемые сервисы</h2>
+        <ul>
+          <li>Яндекс.Метрика (ООО «ЯНДЕКС») — веб-аналитика;</li>
+          <li>Яндекс Директ — таргетированная реклама и ретаргетинг.</li>
+        </ul>
+        <p>
+          Обработка осуществляется на серверах, расположенных на территории Российской Федерации.
+          Трансграничная передача не осуществляется.
+        </p>
+
+        <h2>4. Передача</h2>
+        <p>
+          Обезличенные данные о действиях на Сайте могут передаваться указанным рекламным
+          и аналитическим площадкам исключительно в перечисленных выше целях.
+        </p>
+
+        <h2>5. Срок и отзыв согласия</h2>
+        <p>
+          Согласие действует до истечения срока хранения соответствующих файлов cookie либо
+          до его отзыва. Я могу в любой момент отказаться, отключив или удалив файлы cookie
+          в настройках браузера, изменив выбор в баннере на Сайте либо отключив персонализированную
+          рекламу в настройках рекламных систем.
+        </p>
+
+        <h2>Текст cookie-баннера для сайта</h2>
+        <div class="doc-info" style="display:block">
+          <p style="margin:0;font-style:italic">
+            «Мы используем файлы cookie для работы сайта, аналитики (Яндекс.Метрика) и рекламы
+            (Яндекс Директ). Нажимая «Принять», вы соглашаетесь на обработку cookie. Подробнее —
+            в <a href="privacy-policy.html">Политике обработки персональных данных</a> и
+            <a href="cookie-consent.html">Согласии на обработку cookie</a>.»
+          </p>
+          <p style="margin:12px 0 0;font-size:13px;color:var(--c-steel)">
+            Кнопки баннера: «Принять» и «Только необходимые». Аналитические и рекламные cookie
+            до нажатия «Принять» не загружаются.
+          </p>
+        </div>
+            </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-row">
+        <span>© ИП Дербенева М.В. Все права защищены.</span>
+        <div class="footer-links">
+          <a href="privacy-policy.html">Политика обработки персональных данных</a>
+          <a href="cookie-consent.html">Согласие на обработку cookie</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie banner -->
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Уведомление об использовании cookie">
+    <div class="cookie-inner">
+      <div class="cookie-text">
+        Мы используем файлы cookie и аналогичные технологии для обеспечения корректной работы сайта,
+        улучшения пользовательского опыта и анализа посещаемости. Продолжая пользоваться сайтом,
+        вы соглашаетесь с использованием файлов cookie в соответствии с нашей
+        <a href="privacy-policy.html">Политикой обработки персональных данных</a> и
+        <a href="cookie-consent.html">Согласием на обработку cookie</a>.
+      </div>
+      <div class="cookie-actions">
+        <button class="btn cookie-reject" id="cookieReject" type="button">Только необходимые</button>
+        <button class="btn cookie-accept" id="cookieAccept" type="button">Принять</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var KEY = 'termolog_cookie_consent';
+      var banner = document.getElementById('cookieBanner');
+      var saved;
+      try { saved = localStorage.getItem(KEY); } catch (e) { saved = 'accepted'; }
+      if (!saved) { setTimeout(function () { banner.classList.add('show'); }, 600); }
+      function close(val) {
+        try { localStorage.setItem(KEY, val); } catch (e) {}
+        banner.classList.remove('show');
+      }
+      document.getElementById('cookieAccept').addEventListener('click', function () { close('accepted'); });
+      document.getElementById('cookieReject').addEventListener('click', function () { close('necessary'); });
+    })();
+  </script>
+
+</body>
+</html>
